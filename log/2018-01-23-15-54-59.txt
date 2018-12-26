@@ -1,0 +1,65 @@
+[TestNG] Running:
+  C:\Users\suhui\IdeaProjects\autotestDemo\testng.xml
+
+开始测试
+开始时间：2018-1-23 15:55:00
+从prop.properties中读取：errorStop=false
+从prop.properties中读取：failStop=false
+从prop.properties中读取：watiElementSec=3
+从prop.properties中读取：excelPath=C:\Users\suhui\Desktop\testData\test3.xlsx
+从prop.properties中读取：reportPath=report/testReport.html
+############################开始执行用例：登录#################################
+打开url:http://172.56.4.76:5014/login.html
+输入：sapiadmin
+输入：idea@2017
+点击：xpath=>//div[@class='login-box-btn text-center frosted-glass']=>click
+点击：xpath=>//span[@class='header-span-btn header-menu-btn']=>click
+断言成功
+等待毫秒:1000
+############################开始执行用例：新增企业员工并断言#################################
+点击：class=>icon-sys=>click
+点击[[ChromeDriver: chrome on XP (b9e8ab0f6ebb8933cddf020ed14ee654)] -> xpath: //span[@class='tree-node-label']]
+点击：xpath=>//span[@title='新增']=>click
+输入：autotest1
+页面获取的员工编号（局部变量）:E20179
+点击：xpath=>//input[@type='radio' and @value='1']/..=>click
+时间控件：生日已经点选
+时间控件：入职日期已经点选
+输入：13688886666
+输入：32156856
+输入：test@163.com
+输入：weixin123456
+输入：sapiSinaWeiBo
+输入：12345678
+点击：xpath=>//li[@class='icon-build']=>click
+点击：xpath=>//span[@title='集团']/../../span=>click
+点击：xpath=>//span[@title='深圳分公司测试长名称字段名称比较长的情况下']/../../span=>click
+点击：xpath=>//span[@title='深圳宝安分公司']/../../span=>click
+点击：xpath=>//span[@title='测试部']/../../span[2]=>click
+等待毫秒:1000
+点击[[ChromeDriver: chrome on XP (b9e8ab0f6ebb8933cddf020ed14ee654)] -> xpath: //div[@class='el-table el-table--fit el-table--enable-row-hover el-table--enable-row-transition']/div[3]/table/tbody/*/td/div]
+点击：xpath=>//div[@class='dialog station-select-dialog active current-dialog']//*/button[2]=>click
+断言成功
+点击：xpath=>//div[@class='dialog add active current-dialog']//*/button[2]=>click
+等待毫秒:2000
+点击：xpath=>//span[@title='搜索']=>click
+输入：autotest1
+按回车键
+断言成功
+断言成功
+断言成功
+等待毫秒:1000
+总共执行用例数：2
+测试通过用例数：2
+抛异常用例数：0
+断言失败用例数：0
+测试结束时间：2018-1-23 15:55:43
+》》》》》》》》》》》》》》》》》开始生成测试报告《《《《《《《《《《《《《《《《《
+成功生成测试报告：report/testReport.html
+测试结束
+
+===============================================
+Suite1
+Total tests run: 1, Failures: 0, Skips: 0
+===============================================
+

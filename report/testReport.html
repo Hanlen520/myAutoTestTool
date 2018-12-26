@@ -1,0 +1,57 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK" /><meta name="Su"><meta name="description" content="自动化测试用例结果列表"><title>UI自动化测试报告</title><script type="text/javascript">
+        var reportInfo=[["登录", "通过"]];
+        function displayDate(id){
+            // document.getElementById(id).innerHTML=mylist[3];
+            result=document.getElementById(id).innerHTML;
+            if (result==="断言失败"||result==="定位失败") {
+                document.getElementById(id).innerHTML=reportInfo[id][2];
+            }else{
+                document.getElementById(id).innerHTML=reportInfo[id][1];
+            }
+            
+        }
+        
+
+window.onload=function(){
+            for (var i = reportInfo.length - 1; i >= 0; i--) {
+                if(document.getElementById(i).innerHTML==="通过"){
+                    document.getElementById(i).style.color="Green";
+                }else{
+                    document.getElementById(i).style.color="Red";    
+                }
+                
+            }
+
+ var a=document.getElementById("errorCase").innerHTML
+            var b=document.getElementById("failCase").innerHTML
+            var c=document.getElementById("passCase").innerHTML
+            if(a.indexOf("0")==-1){
+                document.getElementById("errorCase").style.color="Red";
+            }else{
+                document.getElementById("errorCase").style.color="Green";
+            }
+            if(b.indexOf("0")==-1){
+                document.getElementById("failCase").style.color="Red";
+            }else{
+                document.getElementById("failCase").style.color="Green";
+            }
+
+            document.getElementById("passCase").style.color="Green";        }    </script></head><body STYLE="background-color:#CCFFFF;" align="center"><br><h1>ui自动化测试结果</h1><br><br><table width="90%" height="50"  align="center" style="table-layout:fixed;">
+        
+<tr>
+            <td >定位失败用例数：<span id="errorCase">0</span></td>
+        </tr>
+        <tr>
+            <td >断言失败用例数：<span id="failCase">0</span></td>
+        </tr>
+        <tr>
+            <td >测试通过用例数：<span id="passCase">1</span></td>
+        </tr>            <td>总共执用例数：  1</td>
+<tr>
+            <td>测试开始时间：  2018-12-26 09:36:50</td>
+        </tr>
+        <tr>
+            <td>测试结束时间：  2018-12-26 09:37:17</td>
+        </tr>        </tr>
+                    
+    </table><table width="90%" height="80" border="1" align="center" style="table-layout:fixed;" cellspacing="0" > <thead><tr><th>测试用例名</th><th>执行结果</th></tr></thead><tbody style="word-wrap:break-word;font-weight:bold;text-align: center;"><tr><td>登录</td><td id="0" href="javascript:void(0)" onclick="displayDate('0')">通过</td></tr></tbody>
